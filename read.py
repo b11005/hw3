@@ -18,7 +18,7 @@ new_file.close()
 
 f1 = open('pages.txt')
 topic={}
-file=open('sub_pages.txt','w')
+file=open('sub.txt','w')
 
 for page in f1:
     page1,page2 = page.strip().split('\t')
