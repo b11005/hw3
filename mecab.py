@@ -24,7 +24,7 @@ for line in f:
     line1,line2=line.strip().split('\t')
     d=getNoun(line2)
 for k,v in sorted(words.items(), key=lambda x:x[1], reverse=True):
-    print k, v
+    if v>50: print k, v
 
 """    for k,v in sorted(words.items(), key=lambda x:x[1], reverse=True):
         f1.write(k.decode('utf-8'))
