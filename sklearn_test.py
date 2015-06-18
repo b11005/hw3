@@ -14,7 +14,7 @@ class Analyzer:
     def __init__(self, args):#クラスタリングの設定
         self.infile = args[1]
         self.outfile = args[2]
-        self.num_clusters = 10 #分類するクラスタの数ー変更するとまた結果がかわります。
+        self.num_clusters = 10 #分類するクラスタの数ー変更するとまた結果がかわるかも
         self.lsa_dim = 500
         self.max_df = 0.8
         self.max_features = 10000
