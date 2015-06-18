@@ -78,7 +78,7 @@ class Analyzer:
         return clusters #生成したクラスタを返す
 
     def write_cluster(self, clusters):
-        f = codecs.open('result.txt', 'w', 'utf-8')#ファイル名は固定！上書きされてしまいます。
+        f = codecs.open('%s' % self.outfile, 'w', 'utf-8')
         for i, texts in enumerate(clusters):
             for text in texts:
                 f.write('%d: %s\n' % (i, text.replace('/n', '')))
